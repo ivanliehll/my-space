@@ -39,7 +39,10 @@ export default defineConfig({
 	trailingSlash: "always",
 
 	output: 'static',
-    adapter: netlify(),
+    adapter: netlify({
+    // ✨ 核心關鍵：停用 Netlify 的圖片優化服務，避免與 Astro v6 套件發生內部衝突！
+    imageService: false, 
+  }),
 	integrations: [
 		umami({
 			shareUrl: false,
