@@ -39,10 +39,7 @@ export default defineConfig({
 	trailingSlash: "always",
 
 	output: 'static',
-    adapter: {
-    name: 'static-adapter',
-    hooks: {}
-  },
+  
 	integrations: [
 		umami({
 			shareUrl: false,
