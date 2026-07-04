@@ -1,11 +1,11 @@
 import { config, fields, collection } from '@keystatic/core';
 
 export default config({
-  // 設定為本地模式
   storage: {
     kind: 'github',
     repo: 'ivanliehll/my-space', // 填入你的 GitHub 使用者名稱與專案名稱
   },
+  
   collections: {
     // 對應你的 src/content/posts 資料夾
     posts: collection({

@@ -1,0 +1,8 @@
+---
+// ✨ 核心關鍵：強迫 Keystatic 後台頁面在全靜態模式下預渲染！
+export const prerender = true;
+
+import { Keystatic } from '@keystatic/astro/ui';
+---
+
+<Keystatic client:only="react" />
