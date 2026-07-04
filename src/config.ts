@@ -24,10 +24,10 @@ import { LinkPreset } from "./types/config";
 const SITE_LANG = "zh_TW"; // ✨ 更改為繁體中文
 const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UTC+8
 export const siteConfig: SiteConfig = {
-	title: "Yi-He's Space", // ✨ 你的網站標題
-	subtitle: "自動化與機器人愛好者的數位基地", // ✨ 網站副標題
+	title: "星奈的基地", // ✨ 你的網站標題
+	subtitle: "一個自動化愛好者", // ✨ 網站副標題
 	siteURL: "https://effulgent-brigadeiros-24d0c4.netlify.app/", // ✨ 替換為你的 Netlify 網址
-	siteStartDate: "2026-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
+	siteStartDate: "2026-07-04", // 站点开始运行日期，用于站点统计组件计算运行天数
 
 	timeZone: SITE_TIMEZONE,
 
@@ -46,8 +46,8 @@ export const siteConfig: SiteConfig = {
 		projects: true, // 项目页面开关
 		skills: true, // 技能页面开关
 		timeline: true, // 时间线页面开关
-		albums: false, 
-		devices: false, 
+		albums: true, // 相册页面开关
+		devices: true, // 设备页面开关
 	},
 
 	// 顶栏标题配置
@@ -141,7 +141,7 @@ export const siteConfig: SiteConfig = {
 
 			subtitle: [
 				"熱衷於用程式與硬體解決生活中的問題 🛠️",
-				"專注於 ROS 2 機器人模擬與自動化控制 🤖",
+				"專注自動化控制 🤖",
 				"保持好奇心，不斷探索技術的邊界 ✨",
 				"這裡記錄了我的學習歷程與技術隨筆 📝",
 			], // ✨ 你的主頁動態打字機宣言！
@@ -342,7 +342,7 @@ export const announcementConfig: AnnouncementConfig = {
 };
 
 export const musicPlayerConfig: MusicPlayerConfig = {
-	enable: false, // ✨ 先預設關閉音樂播放器（避免因為原作者的歌單載入失敗導致網頁卡住），等你想放歌時我們再來開啟
+	enable: true, 
 	showFloatingPlayer: false, 
 	floatingEntryMode: "fab", 
 	mode: "local", 
