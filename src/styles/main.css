@@ -725,3 +725,8 @@ html {
 :root:not(.dark) .custom-md spoiler {
   --_spoiler-mask: color-mix(in oklch, var(--primary) 55%, white 45%);
 }
+
+/* ⚡ 強制覆蓋全站所有元素的中文本地字體 */
+*, *::before, *::after {
+  font-family: "萝莉体 第二版", "ZenMaruGothic-Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsoft Jhenghei", sans-serif !important;
+}

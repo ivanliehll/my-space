@@ -53,7 +53,7 @@ export const siteConfig: SiteConfig = {
 	// 顶栏标题配置
 	navbarTitle: {
 		mode: "text-icon",
-		text: "Yi-He.Dev", // ✨ 頂欄左上角的名字
+		text: "星奈.Dev", // ✨ 頂欄左上角的名字
 		icon: "assets/home/home.webp",
 		logo: "assets/home/default-logo.webp",
 	},
