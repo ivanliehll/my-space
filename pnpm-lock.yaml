@@ -17,6 +17,9 @@ importers:
       '@astrojs/netlify':
         specifier: ^8.1.1
         version: 8.1.1(@types/node@25.3.3)(astro@6.1.2(@netlify/blobs@10.7.9)(@types/node@25.3.3)(idb-keyval@6.2.6)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@2.80.0)(stylus@0.64.0)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(babel-plugin-macros@3.1.0)(encoding@0.1.13)(idb-keyval@6.2.6)(jiti@2.6.1)(rollup@2.80.0)(stylus@0.64.0)(terser@5.46.0)(yaml@2.8.2)
+      '@astrojs/node':
+        specifier: ^11.0.2
+        version: 11.0.2(astro@6.1.2(@netlify/blobs@10.7.9)(@types/node@25.3.3)(idb-keyval@6.2.6)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@2.80.0)(stylus@0.64.0)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))
       '@astrojs/rss':
         specifier: ^4.0.18
         version: 4.0.18
@@ -328,6 +331,11 @@ packages:
 
   '@astrojs/netlify@8.1.1':
     resolution: {integrity: sha512-BxSZxyadqpEYEFXndflQoUbpVfwmDSXZMo8i3tjYgMjuHqN0cV3EpKC9ZYV9OMZDWNZjIKPbTn3KxuKlhAWKUA==}
+    peerDependencies:
+      astro: ^7.0.0
+
+  '@astrojs/node@11.0.2':
+    resolution: {integrity: sha512-/ijULxT+A5Cm8wSwWZ2vgqfim1b05D6B8n/a9l6MMA4FCotIH73g7fL7y76XojKXpTe75FVvQH92OxsMqea9kQ==}
     peerDependencies:
       astro: ^7.0.0
 
@@ -5511,6 +5519,10 @@ packages:
     resolution: {integrity: sha512-zJ2mQYM18rEFOudeV4GShTGIQ7RbzA7ozbU9I/XBpm7kqgMywgmylMwXHxZJmkVoYkna9d2pVXVXPdYTP9ej8Q==}
     engines: {node: '>= 0.6'}
 
+  fresh@2.0.0:
+    resolution: {integrity: sha512-Rx/WycZ60HOaqLKAi6cHRKKI7zxWbJ31MhntmtwMoaTeF7XFH9hhBp8vITaMidfljRQ6eYWCKkaTK+ykVJHP2A==}
+    engines: {node: '>= 0.8'}
+
   fs-extra@10.1.0:
     resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
     engines: {node: '>=12'}
@@ -8453,12 +8465,19 @@ packages:
     resolution: {integrity: sha512-VMbMxbDeehAxpOtWJXlcUS5E8iXh6QmN+BkRX1GARS3wRaXEEgzCcB10gTQazO42tpNIya8xIyNx8fll1OFPrg==}
     engines: {node: '>= 0.8.0'}
 
+  send@1.2.1:
+    resolution: {integrity: sha512-1gnZf7DFcoIcajTjTwjwuDjzuz4PPcY2StKPlsGAQ1+YH20IRVrBaXSWmdjowTJ6u8Rc01PoYOGHXfP1mYcZNQ==}
+    engines: {node: '>= 18'}
+
   serialize-javascript@4.0.0:
     resolution: {integrity: sha512-GaNA54380uFefWghODBWEGisLZFj00nS5ACs6yHa9nLqlLpVLO8ChDGeKRjZnV4Nh4n0Qi7nhYZD/9fCPzEqkw==}
 
   serve-static@1.16.3:
     resolution: {integrity: sha512-x0RTqQel6g5SY7Lg6ZreMmsOzncHFU7nhnRWkKgWuMTu5NN0DR5oruckMqRvacAN9d5w6ARnRBXl9xhDCgfMeA==}
     engines: {node: '>= 0.8.0'}
+
+  server-destroy@1.0.1:
+    resolution: {integrity: sha512-rb+9B5YBIEzYcD6x2VKidaa+cqYBJQKnU4oe4E3ANwRRN56yk/ua1YCJT1n21NTS8w6CcOclAKNP3PhdCXKYtQ==}
 
   set-blocking@2.0.0:
     resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
@@ -9995,6 +10014,15 @@ snapshots:
       - tsx
       - uploadthing
       - yaml
+
+  '@astrojs/node@11.0.2(astro@6.1.2(@netlify/blobs@10.7.9)(@types/node@25.3.3)(idb-keyval@6.2.6)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@2.80.0)(stylus@0.64.0)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))':
+    dependencies:
+      '@astrojs/internal-helpers': 0.10.1
+      astro: 6.1.2(@netlify/blobs@10.7.9)(@types/node@25.3.3)(idb-keyval@6.2.6)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@2.80.0)(stylus@0.64.0)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2)
+      send: 1.2.1
+      server-destroy: 1.0.1
+    transitivePeerDependencies:
+      - supports-color
 
   '@astrojs/prism@4.0.1':
     dependencies:
@@ -12263,7 +12291,7 @@ snapshots:
   '@parcel/watcher-wasm@2.5.6':
     dependencies:
       is-glob: 4.0.3
-      picomatch: 4.0.3
+      picomatch: 4.0.5
 
   '@parcel/watcher-win32-arm64@2.5.6':
     optional: true
@@ -12279,7 +12307,7 @@ snapshots:
       detect-libc: 2.1.2
       is-glob: 4.0.3
       node-addon-api: 7.1.1
-      picomatch: 4.0.3
+      picomatch: 4.0.5
     optionalDependencies:
       '@parcel/watcher-android-arm64': 2.5.6
       '@parcel/watcher-darwin-arm64': 2.5.6
@@ -13935,7 +13963,7 @@ snapshots:
       glob: 10.4.5
       graceful-fs: 4.2.11
       node-gyp-build: 4.8.4
-      picomatch: 4.0.3
+      picomatch: 4.0.5
       resolve-from: 5.0.0
     transitivePeerDependencies:
       - encoding
@@ -16165,6 +16193,8 @@ snapshots:
   fraction.js@5.3.4: {}
 
   fresh@0.5.2: {}
+
+  fresh@2.0.0: {}
 
   fs-extra@10.1.0:
     dependencies:
@@ -19660,7 +19690,7 @@ snapshots:
   rollup-plugin-visualizer@5.14.0(rolldown@1.1.4)(rollup@2.80.0):
     dependencies:
       open: 8.4.2
-      picomatch: 4.0.3
+      picomatch: 4.0.5
       source-map: 0.7.6
       yargs: 17.7.2
     optionalDependencies:
@@ -19822,6 +19852,22 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  send@1.2.1:
+    dependencies:
+      debug: 4.4.3
+      encodeurl: 2.0.0
+      escape-html: 1.0.3
+      etag: 1.8.1
+      fresh: 2.0.0
+      http-errors: 2.0.1
+      mime-types: 3.0.2
+      ms: 2.1.3
+      on-finished: 2.4.1
+      range-parser: 1.2.1
+      statuses: 2.0.2
+    transitivePeerDependencies:
+      - supports-color
+
   serialize-javascript@4.0.0:
     dependencies:
       randombytes: 2.1.0
@@ -19834,6 +19880,8 @@ snapshots:
       send: 0.19.2
     transitivePeerDependencies:
       - supports-color
+
+  server-destroy@1.0.1: {}
 
   set-blocking@2.0.0: {}
 

@@ -7,6 +7,7 @@ import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 import keystatic from '@keystatic/astro'; // 1. 引入套件
 import netlify from '@astrojs/netlify';
+import node from '@astrojs/node';
 import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
 import { umami } from "oddmisc";
@@ -39,7 +40,9 @@ export default defineConfig({
 	trailingSlash: "always",
 
 	output: 'static',
-  
+    adapter: node({
+    mode: 'standalone',
+  }),
 	integrations: [
 		umami({
 			shareUrl: false,
