@@ -40,9 +40,7 @@ export default defineConfig({
 	trailingSlash: "always",
 
 	output: 'static',
-    adapter: node({
-    mode: 'standalone',
-  }),
+
 	integrations: [
 		umami({
 			shareUrl: false,

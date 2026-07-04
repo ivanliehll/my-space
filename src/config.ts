@@ -264,9 +264,10 @@ export const navBarConfig: NavBarConfig = {
 					icon: "material-symbols:group",
 				},
 				{
-			        name: "➕ 撰寫新文章", // ✨ 在網頁最上方加一個亮眼的發文按鈕！
-			        url: "/keystatic/",     // 指向我們的後台路由（記得加斜線）
-			        icon: "material-symbols:add-circle-outline",
+			        name: "➕ 撰寫新文章",
+	                // ⚡ 替換成你的專屬 GitHub 直達網址（格式為：https://github.com/使用者名稱/倉庫名稱/new/分支名稱/檔案路徑）
+	                url: "https://github.com/ivanliehll/my-space/new/main/src/content/posts", 
+	                icon: "material-symbols:add-circle-outline",
 		        },
 			],
 		},
