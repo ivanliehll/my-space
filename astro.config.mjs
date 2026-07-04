@@ -6,6 +6,7 @@ import swup from "@swup/astro";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 import keystatic from '@keystatic/astro'; // 1. 引入套件
+import netlify from '@astrojs/netlify';
 import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
 import { umami } from "oddmisc";
