@@ -269,9 +269,9 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.webp", // ✨ 你的頭像路徑
-	name: "奕和 (Yi-He)", // ✨ 你的名字
-	bio: "高中生 / 自動化與機器人愛好者 🤖\n熱衷於 Maker DIY、ROS 2 與軟硬體整合整合開發。", // ✨ 個人特質簡介
+	avatar: "assets/images/HINA.jpg", // ✨ 你的頭像路徑
+	name: "星奈", // ✨ 你的名字
+	bio: "大學生/ 自動化與機器人愛好者 🤖\n熱衷於 Maker DIY、ROS 2 與軟硬體整合整合開發。", // ✨ 個人特質簡介
 	typewriter: {
 		enable: true, 
 		speed: 80, 
@@ -331,7 +331,7 @@ export const shareConfig: ShareConfig = {
 
 export const announcementConfig: AnnouncementConfig = {
 	title: "最新公告", // ✨ 公告欄標題
-	content: "歡迎來到我的全新數位基地！Mizuki 主題大改造完成！🎉", // ✨ 公告內容
+	content: "歡迎來到我的全新數位基地！", // ✨ 公告內容
 	closable: true, 
 	link: {
 		enable: true, 
