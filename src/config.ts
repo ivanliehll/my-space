@@ -263,6 +263,11 @@ export const navBarConfig: NavBarConfig = {
 					url: "/friends/",
 					icon: "material-symbols:group",
 				},
+				{
+			        name: "➕ 撰寫新文章", // ✨ 在網頁最上方加一個亮眼的發文按鈕！
+			        url: "/keystatic/",     // 指向我們的後台路由（記得加斜線）
+			        icon: "material-symbols:add-circle-outline",
+		        },
 			],
 		},
 	],

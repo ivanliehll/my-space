@@ -5,6 +5,7 @@ import { pluginLineNumbers } from "@expressive-code/plugin-line-numbers";
 import swup from "@swup/astro";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
+import keystatic from '@keystatic/astro'; // 1. 引入套件
 import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
 import { umami } from "oddmisc";
@@ -42,6 +43,7 @@ export default defineConfig({
 		umami({
 			shareUrl: false,
 		}),
+		keystatic(),
 		swup({
 			theme: false,
 			animationClass: "transition-swup-",
