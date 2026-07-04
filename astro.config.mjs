@@ -38,7 +38,7 @@ export default defineConfig({
 	base: "/",
 	trailingSlash: "always",
 
-	output: 'hybrid',
+	output: 'static',
     adapter: netlify(),
 	integrations: [
 		umami({
