@@ -97,5 +97,8 @@ export function getFileDirFromPath(filePath: string): string {
 }
 
 export function url(path: string) {
-	return joinUrl("", import.meta.env.BASE_URL, path);
+    // 確保路徑開頭不會有重複的斜線
+    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+    const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+    return `${base}${cleanPath}`;
 }
