@@ -1,49 +1,32 @@
-
 This website is built with the **Astro** framework using the [Mizuki](https://github.com/LyraVoid/Mizuki) theme.
 
-::github{repo="LyraVoid/Mizuki"}
+## 🛠️ 歡迎來到我的數位基地！
 
-## 🌟 Theme Features
-
-### 🎨 Design & User Experience
-- **Modern & Elegant Design** - Clean, minimalist interface with beautiful typography
-- **Fully Responsive** - Optimized for all devices from mobile to desktop
-- **Dark/Light Mode** - Automatic theme switching with smooth transitions
-- **Beautiful Typography** - Enhanced readability with JetBrains Mono font
-- **Smooth Animations** - Fluid page transitions and interactive elements
-
-### 🔍 Content & Search
-- **Advanced Search** - Powered by [Pagefind](https://pagefind.app/) for fast, accurate results
-- **Enhanced Markdown** - Extended syntax with code highlighting and math support
-- **Interactive Table of Contents** - Auto-scroll navigation for long articles
-- **RSS Feed Generation** - Stay updated with automatic feed generation
-- **Reading Time Estimation** - Know how long articles take to read
-- **Post Categorization** - Organize content with tags and categories
-
-
-
-### 📱 Special Pages
-- **Anime Tracking Page** - Track your anime watching progress with ratings
-- **Friends Links Page** - Showcase friend websites with beautiful cards
-- **Diary/Moments Page** - Share life moments like social media posts
-- **Archive Page** - Organized timeline view of all posts
-- **About Page** - Customizable personal introduction (this page!)
-
-### 🛠 Technical Features
-- **Enhanced Code Blocks** - Powered by [Expressive Code](https://expressive-code.com/)
-- **Math Support** - LaTeX rendering with KaTeX for mathematical expressions
-- **Image Optimization** - PhotoSwipe gallery with lazy loading
-- **SEO Optimized** - Built-in sitemap and meta tags for better search visibility
-- **Performance Optimized** - Fast loading with caching and optimization
-- **Comment System Ready** - Integration support for Twikoo comments
-
-### 🎯 Advanced Markdown Features
-- **Callouts & Admonitions** - Beautiful info boxes with `> [!NOTE]`, `> [!TIP]`, `> [!WARNING]`
-- **Mathematical Equations** - Write LaTeX math with `$inline$` and `$$block$$` syntax
-- **GitHub Cards** - Embed repository cards with `::github{repo="user/repo"}`
-- **Syntax Highlighting** - Advanced code highlighting with line numbers
-- **Copy Code Buttons** - Easy code copying functionality
+這裡是我記錄技術探索、數學思維與生活點滴的自留地。目前網站正透過 GitHub Actions 實現自動化雙倉庫部署，讓我能隨時隨地用手機極速發文。
 
 ---
 
-*Built with ❤️ using Astro and inspired by modern web design principles.*
+## 🚀 目前正在點的技能樹與專案
+
+### 🤖 機器人與自動化（Robotics）
+* **AR4 機器手臂模擬專案**：目前正全力投入基於 **ROS 2** 環境的虛擬控制模擬，進行軌跡規劃與除錯。
+* **Discord 機器人專案**：我設計了三隻機器人在伺服器內，有抓圖、音樂、迷因以及讀書控管等。
+
+### 📐 數學與語文興趣
+* **TRML 數學競賽**：曾參與第 27 屆 TRML（台灣區高中數學聯賽），熱衷於挑戰具備邏輯與深度的數學難題。
+* **學科愛好**：在學校裡，最喜歡且最願意深入鑽研的學科就是**數學**與**英文**。
+
+---
+
+## 📺 個人娛樂與偏好
+
+* **ACG 遊戲愛好**：偏愛精緻二次元風格的影音遊戲，比起放置或全自動掛機，我更享受**純手動操作**帶來的打擊感、豐富的情節與視覺美學（BCCA 玩家屬性）。
+* **文具控**：對書寫工具的硬體也有所要求，偏好配備「旋轉筆芯」與「護芯機構」的高品質自動鉛筆。目前服役的兩支分別是Zebra Delguard -LX 以及 Kuru Toga Metal。
+
+---
+
+## 📬 找到我
+
+如果你對 ROS 2 機器手臂、自動化控制、或是Discord Bot有興趣，歡迎透過上方導覽列的 *links* 找到我的 GitHub、Instagram 或 YouTube 通道，一起交流切磋！
+
+*感謝LyraVoid大佬提供的Astro網頁模板，有興趣的可以去看看!*

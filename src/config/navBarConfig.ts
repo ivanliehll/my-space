@@ -139,24 +139,35 @@ export const navBarConfig: NavBarConfig = {
 			url: "/links/",
 			icon: "material-symbols:link",
 			children: [
+				{  name: "Instagram",
+				   url: "https://www.instagram.com/ivanliehll/",
+                   external: true,	
+				   icon: "fa7-brands:instagram",  
+		        },
+				// {
+				// 	name: "GitHub",
+				// 	url: "https://github.com/LyraVoid/Mizuki",
+				// 	external: true, // 外部链接，新标签页打开
+				// 	icon: "fa7-brands:github",
+				// },
 				{
-					name: "GitHub",
-					url: "https://github.com/LyraVoid/Mizuki",
-					external: true, // 外部链接，新标签页打开
+					name: "YouTube",
+					url: "https://www.youtube.com/@star-hoshino",
+					external: true,
+					icon: "fa7-brands:youtube",
+				},
+				// {
+				// 	name: "Gitee",
+				// 	url: "https://gitee.com/matsuzakayuki/Mizuki",
+				// 	external: true,
+				// 	icon: "mdi:git",
+				// },
+				{
+			        name: "GitHub",
+					url: "https://github.com/ivanliehll",
+					external: true, 
 					icon: "fa7-brands:github",
-				},
-				{
-					name: "Bilibili",
-					url: "https://space.bilibili.com/701864046",
-					external: true,
-					icon: "fa7-brands:bilibili",
-				},
-				{
-					name: "Gitee",
-					url: "https://gitee.com/matsuzakayuki/Mizuki",
-					external: true,
-					icon: "mdi:git",
-				},
+		        },
 			],
 		},
 
