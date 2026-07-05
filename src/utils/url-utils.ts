@@ -97,8 +97,9 @@ export function getFileDirFromPath(filePath: string): string {
 }
 
 export function url(path: string) {
-    // 確保路徑開頭不會有重複的斜線
+    // 1. 先把開頭可能重複的斜線去掉
     const cleanPath = path.startsWith('/') ? path.slice(1) : path;
-    const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
-    return `${base}${cleanPath}`;
+    
+    // 2. 直接強行在前面加上你的專案倉庫路徑 /my-space/ 👈
+    return `/my-space/${cleanPath}`;
 }
