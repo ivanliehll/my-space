@@ -35,6 +35,8 @@ import { remarkMermaid } from "./src/plugins/remark-mermaid.js";
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://ivanliehll.github.io',
+	base: '/my-space/',
 	fonts: [
 		{
 			name: "JetBrains Mono",
